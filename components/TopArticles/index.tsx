@@ -14,7 +14,8 @@ export default function TopArticles({ articles }: Props) {
 					// console.log(index);
 					<Article
 						date={article.date}
-						href={`/articles/${article.slug}`}
+						href={article.url}
+						// href={`/articles/${article.slug}`}
 						title={article.title}
 						key={article.slug}
 						description={article.description}
@@ -26,10 +27,11 @@ export default function TopArticles({ articles }: Props) {
 			</div>
 
 			<Link
-				href='/articles'
+				// href='/articles'
+				href='https://dev.to/fullsnacker'				
 				className='font-medium flex gap-1 justify-center hover:gap-2.5 items-center transition-all w-44 rounded-xl hover:bg-gray-100 py-2 active:scale-95'
 			>
-				<p className=''>View all articles</p>
+				<p className=''>Ver todos</p>
 				<img src='/icons/arrow-narrow.svg' alt='' className='w-6 h-6 rotate-180 ' />
 			</Link>
 		</section>

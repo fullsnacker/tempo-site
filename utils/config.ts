@@ -1,6 +1,6 @@
 export const HEADER_LINKS = [
-	{ path: '/', name: 'Home' },
-	{ path: '/about', name: 'About' },
+	{ path: '/', name: 'Inicio' },
+	{ path: '/about', name: 'Acerca de' },
 	// { path: '/articles', name: 'Articles' },	
 	{ path: 'https://linktr.ee/fullsnacker', name: 'Links' },
 ]

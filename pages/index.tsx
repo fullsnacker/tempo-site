@@ -25,36 +25,24 @@ export default function Home({ articles, notes, snippets }: Props) {
 	return (
 		<Page title='' description='' footer>
 			<Banner
-				title='Welcome!'
-				description='LOREM IPSUM'
+				title='fullsnacker'
+				description='full-stack developer'
 			/>
 
 			<div className='grid gap-8'>
 				<TopArticles articles={articles} />
-				<Recomendator />
-				{/* <div className='pt-10 grid gap-4 w-10/12 mx-auto'>
-				{notes.map((note, index: number) => (
-					<NoteContent key={`${note.topic}_${index}`} {...note} />
-				))}
-				</div>
-				<div className='grid gap-0.5 text-gray-600 hover:text-gray-400 font-medium first-letter:capitalize'>
-					{snippets.map((snippet, index: number) => (
-						<Collapsable key={snippet.title} label={snippet.title} tag={snippet.topic} open={false}>
-							<MDXRemote components={{ CH }} {...snippet.content} />
-						</Collapsable>
-					))}
-				</div> */}
+				{/* <Recomendator /> */}
 			</div>
 			
 			{/* GithubRepos */}
-			{/* <h2 className='font-extrabold md:text-4xl text-3xl text-gray-800'>Repos</h2> */}
+			<h2 className='font-extrabold md:text-4xl text-3xl text-gray-800'>Proyectos</h2>
 			<div className='grid md:grid-cols-3 grid-cols-1 sm:grid-cols-2 gap-6'>
 				<div className='grid gap-6 items-center border-solid border borde-gray-800 rounded-xl hover:bg-gray-50 p-4 transition-all hover:-translate-y-1'>
 					<div className='flex justify-between items-center gap-2'>
-						<h2 className='text-gray-800 font-semibold md:text-xl text-lg capitalize'>{'Whatsapp Clone'}</h2>
+						<h2 className='text-gray-800 font-semibold md:text-xl text-lg capitalize'>{'App React de Clima'}</h2>
 						<div className='flex items-center text-gray-800'>
 						<a
-								href={'demoLink'}
+								href={'https://react-weather-app-dlfp.vercel.app/'}
 								target='_blank'
 								rel='noopener noreferrer'
 								className='p-1 text-gray-700 hover:bg-gray-200 rounded-lg active:scale-95 transition-all'
@@ -66,7 +54,7 @@ export default function Home({ articles, notes, snippets }: Props) {
 								</IconContext.Provider>
 							</a>
 							<a
-								href={'demoLink2'}
+								href={'https://github.com/fullsnacker/react-weather-app'}
 								target='_blank'
 								rel='noopener noreferrer'
 								className='p-1 text-gray-700 hover:bg-gray-200 rounded-lg active:scale-95 transition-all'
@@ -79,11 +67,10 @@ export default function Home({ articles, notes, snippets }: Props) {
 							</a>
 						</div>
 					</div>
-					<p className='text-gray-600'>{'Demo of WhatsApp web to create a chat with any email and chat with messages in realtime.'}</p>
+					<p className='text-gray-600'>{'App de React utilizando RapidApi para pronosticar el clima en todo el mundo!'}</p>
 					<div className='flex gap-1.5 pb-2'>
-					<span className={`px-2 py-0.5 bg-gray-100 rounded-full text-xs font-semibold grid place-items-center`}
-					>TEST</span
->
+						<span className={`px-2 py-0.5 bg-gray-100 rounded-full text-xs font-semibold grid place-items-center`}>React</span>
+						<span className={`px-2 py-0.5 bg-gray-100 rounded-full text-xs font-semibold grid place-items-center`}>RapidApi</span>
 					</div>
 				</div>
 
@@ -92,10 +79,10 @@ export default function Home({ articles, notes, snippets }: Props) {
 
 				<div className='grid gap-6 items-center border-solid border borde-gray-800 rounded-xl hover:bg-gray-50 p-4 transition-all hover:-translate-y-1'>
 					<div className='flex justify-between items-center gap-2'>
-						<h2 className='text-gray-800 font-semibold md:text-xl text-lg capitalize'>{'Whatsapp Clone'}</h2>
+						<h2 className='text-gray-800 font-semibold md:text-xl text-lg capitalize'>{'Challenge de MercadoLibre'}</h2>
 						<div className='flex items-center text-gray-800'>
 						<a
-								href={'demoLink'}
+								href={'https://meli-challenge-omega.vercel.app/'}
 								target='_blank'
 								rel='noopener noreferrer'
 								className='p-1 text-gray-700 hover:bg-gray-200 rounded-lg active:scale-95 transition-all'
@@ -107,7 +94,7 @@ export default function Home({ articles, notes, snippets }: Props) {
 								</IconContext.Provider>
 							</a>
 							<a
-								href={'demoLink2'}
+								href={'https://github.com/fullsnacker/meli-challenge'}
 								target='_blank'
 								rel='noopener noreferrer'
 								className='p-1 text-gray-700 hover:bg-gray-200 rounded-lg active:scale-95 transition-all'
@@ -120,11 +107,9 @@ export default function Home({ articles, notes, snippets }: Props) {
 							</a>
 						</div>
 					</div>
-					<p className='text-gray-600'>{'Demo of WhatsApp web to create a chat with any email and chat with messages in realtime.'}</p>
+					<p className='text-gray-600'>{'Resolveremos un challenge de la empresa MercadoLibre que toman para ingresar a trabajar con ellos.'}</p>
 					<div className='flex gap-1.5 pb-2'>
-					<span className={`px-2 py-0.5 bg-gray-100 rounded-full text-xs font-semibold grid place-items-center`}
-					>TEST</span
->
+						<span className={`px-2 py-0.5 bg-gray-100 rounded-full text-xs font-semibold grid place-items-center`}>React</span>
 					</div>
 				</div>
 
@@ -132,22 +117,10 @@ export default function Home({ articles, notes, snippets }: Props) {
 
 				<div className='grid gap-6 items-center border-solid border borde-gray-800 rounded-xl hover:bg-gray-50 p-4 transition-all hover:-translate-y-1'>
 					<div className='flex justify-between items-center gap-2'>
-						<h2 className='text-gray-800 font-semibold md:text-xl text-lg capitalize'>{'Whatsapp Clone'}</h2>
+						<h2 className='text-gray-800 font-semibold md:text-xl text-lg capitalize'>{'App Mern desde 0'}</h2>
 						<div className='flex items-center text-gray-800'>
-						<a
-								href={'demoLink'}
-								target='_blank'
-								rel='noopener noreferrer'
-								className='p-1 text-gray-700 hover:bg-gray-200 rounded-lg active:scale-95 transition-all'
-							>								
-								<IconContext.Provider value={{ size: "1em"}}>
-								<div>
-									<FaLink />
-								</div>
-								</IconContext.Provider>
-							</a>
 							<a
-								href={'demoLink2'}
+								href={'https://github.com/fullsnacker/mern-base'}
 								target='_blank'
 								rel='noopener noreferrer'
 								className='p-1 text-gray-700 hover:bg-gray-200 rounded-lg active:scale-95 transition-all'
@@ -160,43 +133,24 @@ export default function Home({ articles, notes, snippets }: Props) {
 							</a>
 						</div>
 					</div>
-					<p className='text-gray-600'>{'Demo of WhatsApp web to create a chat with any email and chat with messages in realtime.'}</p>
+					<p className='text-gray-600'>{'App Full-Stack para llevar el registro de nuestras rutinas en el gimnasio. Incluye el Front en React.js y el Back en Node.js, Express.js y MongoDB.'}</p>
 					<div className='flex gap-1.5 pb-2'>
-					<span className={`px-2 py-0.5 bg-gray-100 rounded-full text-xs font-semibold grid place-items-center`}
-					>TEST</span>
+						<span className={`px-2 py-0.5 bg-gray-100 rounded-full text-xs font-semibold grid place-items-center`}>React</span>
+						<span className={`px-2 py-0.5 bg-gray-100 rounded-full text-xs font-semibold grid place-items-center`}>Mongo</span>
+						<span className={`px-2 py-0.5 bg-gray-100 rounded-full text-xs font-semibold grid place-items-center`}>Express</span>
+						<span className={`px-2 py-0.5 bg-gray-100 rounded-full text-xs font-semibold grid place-items-center`}>Node</span>
 					</div>
 				</div>				
 				</div>
 
 				
 				<Link
-				href='/articles'
+				href='https://github.com/fullsnacker'
 				className='font-medium flex gap-1 justify-center hover:gap-2.5 items-center transition-all w-44 rounded-xl hover:bg-gray-100 py-2 active:scale-95'
 			>
-				<p className=''>View all repos</p>
+				<p className=''>Ver todos</p>
 				<img src='/icons/arrow-narrow.svg' alt='' className='w-6 h-6 rotate-180 ' />
 			</Link>
-
-				{/* <div>
-
-				<section
-					className={`mx-auto md:max-w-5xl grid gap-8 before:block before:h-14 -mt-14`}>
-					{<h2 className='font-extrabold md:text-4xl text-3xl text-gray-800'>Main Technologies</h2>}
-					<slot>AAA</slot>
-					<slot>AbbAA</slot>
-					<IconContext.Provider value={{ size: "2em", style: {textAlign: 'center'}}}>
-												<div>
-													<FaGithub />
-												</div>
-												</IconContext.Provider>
-												<div className='flex gap-1.5 pb-2'>
-									<span className={`px-2 py-0.5 bg-gray-100 rounded-full text-xs font-semibold grid place-items-center`}
-									>TEST</span
-				>
-									</div>
-				</section>
-
-			</div> */}
 		</Page>
 	)
 }

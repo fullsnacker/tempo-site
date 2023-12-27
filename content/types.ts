@@ -12,6 +12,7 @@ export interface DataContent {
 	type: DataType
 	readingTime: number
 	highlight: boolean
+	url:string
 }
 
 export interface PartialContent extends DataContent {
