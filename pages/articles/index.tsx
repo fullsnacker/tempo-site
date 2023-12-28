@@ -23,7 +23,7 @@ export default function Articles({ posts }: Props) {
 	}
 
 	return (
-		<Page description='' title="Rodrigo's Blog | Articles">
+		<Page description='' title="fullsnacker | Articles">
 			<Banner
 				title='What I&#39;ve written'
 				description={`${posts.length} Articles about UI architecture, design systems, and advanced CSS`}

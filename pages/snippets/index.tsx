@@ -12,7 +12,7 @@ interface Props {
 
 export default function Snippets({ snippets }: Props) {
 	return (
-		<Page description='' title="Rodrigo's Blog | Snippets">
+		<Page description='' title="fullsnacker | Snippets">
 			<Banner
 				title='What I&#39;ve used'
 				description={`A collection with ${snippets.length} JavaScript snippets that I used most`}
